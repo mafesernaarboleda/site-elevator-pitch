@@ -3,14 +3,14 @@ require('dotenv').config();
 module.exports = {
   siteMetadata: {
     title: '@khriztianmoreno.dev',
-    url: `https://github.com/greglobinski/gatsby-themes/tree/master/packages/gatsby-theme-elevator-pitch`,
+    url: 'https://khriztianmoreno.dev',
     image: 'preview.jpg',
     language: 'en',
     description: 'coming soon...',
     socialLinks: {
-      github: 'https://github.com/greglobinski',
-      twitter: 'https://twitter.com/greglobinski',
-      mailto: 'mailto:greglobinski@gmail.com',
+      github: 'https://github.com/khriztianmoreno',
+      twitter: 'https://twitter.com/khriztianmoreno',
+      mailto: 'mailto:khriztianmoreno@gmail.com',
     },
   },
   plugins: [
