@@ -1,11 +1,8 @@
-# Hi, my name is Cristian Moreno.
+# Hi, my name is Mafe Serna. 
 
-FullStack Javascript Developer and Community builder 👨🏻‍💻♥️👨🏻‍🏫
-
-
-Producer [@commitfm](https://twitter.com/commitfm) 🎙📻
-
-Co-Organize of [@MedellinJS](https://twitter.com/medellinjs) [@avanet](https://twitter.com/avanet)
+👩🏻‍💻 Javascript Developer 👩🏻‍🏫 
 
 
-Javascript Developer Avocado 🥑
+I'm passionate about technology and photography 📸, speaker and active participant of the communities in the city.
+
+Co-Organizer of [@MedellinJS](https://twitter.com/medellinjs).

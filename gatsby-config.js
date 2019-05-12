@@ -2,15 +2,15 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: '@khriztianmoreno.dev',
-    url: 'https://khriztianmoreno.dev',
+    title: '@mafe.dev',
+    url: 'https://mafe.dev',
     image: 'preview.jpg',
     language: 'en',
     description: 'coming soon...',
     socialLinks: {
-      github: 'https://github.com/khriztianmoreno',
-      twitter: 'https://twitter.com/khriztianmoreno',
-      mailto: 'mailto:khriztianmoreno@gmail.com',
+      github: 'https://github.com/mafesernaarboleda',
+      twitter: 'https://twitter.com/mafesernaarbole',
+      mailto: 'mailto:mafesernaarboleda@gmail.com',
     },
   },
   plugins: [
