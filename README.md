@@ -1,10 +1,9 @@
-### a Gatsby.js starter
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a5faf450-7640-4748-bb13-b4485b787b29/deploy-status)](https://app.netlify.com/sites/gifted-thompson-49a0c5/deploys)
 
-# Elevator Pitch
+# Elevator Pitch Web Site 👩🏻‍💻
 
-A Gatsby.js theme build upon the Gatsby.js theme [Elevator Pitch](https://github.com/greglobinski/gatsby-themes/tree/master/packages/gatsby-theme-elevator-pitch)
+A Gatsby theme presenting a person
 
-![Elevator Pitch - Gatsby.js theme](https://github.com/greglobinski/gatsby-themes/raw/master/media/gatsby-theme-elevator-pitch.gif)
 
 ## Prerequisites
 
@@ -16,54 +15,95 @@ npm install --global gatsby-cli
 
 More information on [GatsbyJS.org](https://www.gatsbyjs.org/tutorial/part-one)
 
-## Getting started
+## 🚀 Quick start 💻
 
-Install the starter using Gatsby Cli `gatsby new` command.
+1.  **Start developing.**
 
-```text
-gatsby new [NEW_DIRECTORY] https://github.com/greglobinski/gatsby-starter-elevator-pitch.git
+    Navigate into your new site’s directory and start it up.
+
+    ```sh
+    cd my-default-starter/
+    npm start
+    ```
+
+2.  **Open the source code and start editing!**
+
+    Your site is now running at `http://localhost:8000`!
+
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+
+    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+
+## Add content
+
+#### Folders structure
+
+Find folders `images` and `screens` inside the `content/elevator-pitch` folder.
+
+```
+root
+  ├── content
+  │   └── elevator-pitch
+  │       ├── images
+  │       │   └── ...
+  │       └── screens
+  │           └── ...
 ```
 
-Go into the newly created directory and run
+Put a `jpg` file named `avatar.jpg` into the `images` folder. Then add two or more `markdown` files to the `screens` folder.
 
-```text
-gatsby develop
+```
+root
+  ├── content
+  │   └── elevator-pitch
+  │       ├── images
+  │       │   └── avatar.jpg
+  │       └── screens
+  │           ├── 1___first-screen.md
+  │           └── 2___second-screen.md
 ```
 
-to hot-serve your website on http://localhost:8000 or
+#### Files names
 
-```text
-gatsby build
+You can not use a different name for avatar than `avatar.jpg`.
+
+The names of `markdown` files have to obey a pattern `X___slug.md`. Where `X` is a number indicating position of the screen. The number must be follewed by the `___` separator ( 3 x undescore ). The last part of the name, a `slug` is optional. Knowing that, you can name a file like this `1___.md` or `1__first-scrren.md`. Take a look at the [demo content files](https://github.com/greglobinski/gatsby-themes/tree/master/packages/gatsby-theme-elevator-pitch/content/screens) of the theme in the repository.
+
+#### Markdown `screen` files
+
+This is example of a `markdown` file with content for one screen. Two sections: title (`#`) and a paragraph text below.
+
+```
+# This is the screen's title
+
+And the screen's body copy.
 ```
 
-to create static site ready to host (/public).
+You can add as many `screen` files as you want. But remember it should be an elevator pitch so less is better. ;)
 
-## Add your own content
+#### Meta data and social links
 
-Go to a README.md file of the **Elevator Pitch** theme and find there the **Add Content** section to get instructions.
+Update your `gatsby-config.js`
 
-[README.md](https://github.com/greglobinski/gatsby-themes/blob/master/packages/gatsby-theme-elevator-pitch/README.md#folders-structure)
+```
+module.exports = {
+  siteMetadata: {
+    title: `Gatsby.js 'Elevator Pitch' theme`,
+    url: `https://mafe.dev`,
+    image: 'preview.png',
+    language: 'en',
+    description: ' Javascript Developer 👩🏻‍💻 | Co-Organize of @MedellinJS. 👩🏻‍🏫 ',
+    socialLinks: {
+      github: 'https://github.com/mafesernaarboleda',
+      twitter: 'https://twitter.com/mafesernaarbole',
+      mailto: 'mailto:mafesernaarboleda@gmail.com',
+    },
+  },
+  module.exports = {
+  __experimentalThemes: ['gatsby-theme-elevator-pitch']
+};
+```
 
-### LICENSE
+## 💫 Deploy
 
-MIT License
-
-Copyright (c) 2018 greg lobinski
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mafesernaarboleda/site-elevator-pitch)
